@@ -1,27 +1,30 @@
 using UnityEngine;
 
-public class Pickup : MonoBehaviour
+namespace Sonny
 {
-    GameManager gameManager;
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public class Pickup : MonoBehaviour
     {
-        gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
-    }
+        GameManager gameManager;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    private void OnTriggerEnter(Collider otherObject)
-    {
-        if (otherObject.transform.tag == "Player")
+        // Start is called once before the first execution of Update after the MonoBehaviour is created
+        void Start()
         {
-            gameManager.currentPickups += 1; // Increment the pickup count in the GameManager
-            Destroy(this.gameObject); // Destroy the pickup object after collection
+            gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+        }
+
+        // Update is called once per frame
+        void Update()
+        {
+
+        }
+
+        private void OnTriggerEnter(Collider otherObject)
+        {
+            if (otherObject.transform.tag == "Player")
+            {
+                gameManager.currentPickups += 1; // Increment the pickup count in the GameManager
+                Destroy(this.gameObject); // Destroy the pickup object after collection
+            }
         }
     }
 }

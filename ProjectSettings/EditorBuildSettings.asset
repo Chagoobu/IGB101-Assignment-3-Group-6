@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Sonny Wright/Sonny Wright.unity
     guid: 12f2d627033ab5b4e9357abf34b3c13e
+  - enabled: 1
+    path: Assets/Kaden Rowley/Scenes/Kaden Rowley.unity
+    guid: c9482f7386b19e44aa832bedd7b4c231
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

@@ -1,19 +1,22 @@
 using UnityEngine;
 
-public class DoorTest : MonoBehaviour
+namespace Sonny
 {
-    private Animation doorAnimation;
-
-    void Start()
+    public class DoorTest : MonoBehaviour
     {
-        doorAnimation = GetComponent<Animation>();
-    }
+        private Animation doorAnimation;
 
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.F))
+        void Start()
         {
-            doorAnimation.Play();
+            doorAnimation = GetComponent<Animation>();
+        }
+
+        void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                doorAnimation.Play();
+            }
         }
     }
 }

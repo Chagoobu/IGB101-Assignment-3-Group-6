@@ -1,30 +1,34 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LevelSwitch : MonoBehaviour
+
+namespace Sonny
 {
-    GameManager gameManager;
-    public string nextLevel;
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public class LevelSwitch : MonoBehaviour
     {
-        gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
-    }
+        GameManager gameManager;
+        public string nextLevel;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    private void OnTriggerEnter(Collider otherObject)
-    {
-        if (otherObject.transform.tag == "Player")
+        // Start is called once before the first execution of Update after the MonoBehaviour is created
+        void Start()
         {
-            if (gameManager.levelComplete)
+            gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+        }
+
+        // Update is called once per frame
+        void Update()
+        {
+
+        }
+
+        private void OnTriggerEnter(Collider otherObject)
+        {
+            if (otherObject.transform.tag == "Player")
             {
-                SceneManager.LoadScene(nextLevel);
+                if (gameManager.levelComplete)
+                {
+                    SceneManager.LoadScene(nextLevel);
+                }
             }
         }
     }
