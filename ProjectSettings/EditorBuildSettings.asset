@@ -6,16 +6,16 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Sonny Wright/Sonny Wright.unity
+    path: Assets/1. Sonny Wright/Sonny Wright.unity
     guid: 12f2d627033ab5b4e9357abf34b3c13e
   - enabled: 1
-    path: Assets/Kaden Rowley/Scenes/Kaden Rowley.unity
+    path: Assets/2. Kaden Rowley/Scenes/Kaden Rowley.unity
     guid: c9482f7386b19e44aa832bedd7b4c231
   - enabled: 1
-    path: Assets/Tommy Power/Scenes/Tommy Power.unity
+    path: Assets/3. Tommy Power/Scenes/Tommy Power.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
-    path: Assets/Tommy Power/Scenes/Game Over.unity
+    path: Assets/3. Tommy Power/Scenes/Game Over.unity
     guid: 801daf1c9fc39854cbfd85f7bb27ccb6
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
