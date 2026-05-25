@@ -12566,6 +12566,8 @@ MonoBehaviour:
     Space:
     Jump
 
+    E: Wave
+
     F: Open Door'
 --- !u!222 &1775599897
 CanvasRenderer:

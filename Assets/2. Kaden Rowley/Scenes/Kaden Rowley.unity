@@ -15171,8 +15171,10 @@ MonoBehaviour:
 
     A/D: Turn
 
-    F: Open
-    Door'
+    E: Wave
+
+    F:
+    Open Door'
 --- !u!222 &1535134556
 CanvasRenderer:
   m_ObjectHideFlags: 0
