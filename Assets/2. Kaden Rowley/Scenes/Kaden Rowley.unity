@@ -354,7 +354,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 79136059}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70e7d5b47cebaf649ac759e7ec4c181e, type: 3}
+  m_Script: {fileID: 11500000, guid: 7a2c2f6e0c25c8c48aad2c46b4aafc2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Pickup
 --- !u!1 &112473572
@@ -1819,7 +1819,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 433360419}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70e7d5b47cebaf649ac759e7ec4c181e, type: 3}
+  m_Script: {fileID: 11500000, guid: 7a2c2f6e0c25c8c48aad2c46b4aafc2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Pickup
 --- !u!43 &468745089
@@ -4632,7 +4632,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 699930528}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70e7d5b47cebaf649ac759e7ec4c181e, type: 3}
+  m_Script: {fileID: 11500000, guid: 7a2c2f6e0c25c8c48aad2c46b4aafc2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Pickup
 --- !u!1 &717415873
@@ -7828,7 +7828,7 @@ GameObject:
   - component: {fileID: 1107848096}
   - component: {fileID: 1107848095}
   - component: {fileID: 1107848094}
-  - component: {fileID: 1107848093}
+  - component: {fileID: 1107848100}
   - component: {fileID: 1107848099}
   - component: {fileID: 1107848098}
   m_Layer: 0
@@ -7838,19 +7838,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1107848093
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1107848092}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f46e49cbc700f6547a04816f0b96c041, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::LevelSwitch
-  nextLevel: Tommy Power
 --- !u!65 &1107848094
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12747,6 +12734,19 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!114 &1107848100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1107848092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5305ec9dd8458d447b43c8cdc015db71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LevelSwitch
+  nextLevels: Tommy Power
 --- !u!1 &1155314756 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5045630034887569188, guid: dea06b1b73c8f1741923b0b47a191354, type: 3}
@@ -13855,7 +13855,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1238689429}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70e7d5b47cebaf649ac759e7ec4c181e, type: 3}
+  m_Script: {fileID: 11500000, guid: 7a2c2f6e0c25c8c48aad2c46b4aafc2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Pickup
 --- !u!1 &1268471664 stripped
@@ -15192,7 +15192,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1607208997}
-  - component: {fileID: 1607208996}
+  - component: {fileID: 1607208998}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: GameManager
@@ -15200,23 +15200,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1607208996
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1607208995}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e6440089dc711e642aaac7357d9bb12b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GameManager
-  player: {fileID: 543161400}
-  currentPickups: 0
-  maxPickups: 5
-  levelComplete: 0
-  pickupText: {fileID: 1100987696}
 --- !u!4 &1607208997
 Transform:
   m_ObjectHideFlags: 0
@@ -15232,6 +15215,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1607208998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1607208995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8dd1e154fe6e9564c9542742bd2ea3e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameManager
+  player: {fileID: 543161400}
+  currentPickups: 0
+  maxPickups: 5
+  levelComplete: 0
+  pickupText: {fileID: 1100987696}
 --- !u!1 &1615224699 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5432027476491013568, guid: dea06b1b73c8f1741923b0b47a191354, type: 3}
@@ -15486,7 +15486,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1743435096}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70e7d5b47cebaf649ac759e7ec4c181e, type: 3}
+  m_Script: {fileID: 11500000, guid: 7a2c2f6e0c25c8c48aad2c46b4aafc2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Pickup
 --- !u!1 &1796685565
